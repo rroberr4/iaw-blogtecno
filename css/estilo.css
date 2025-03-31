@@ -1,0 +1,129 @@
+/* Hoja de estilos CSS*/
+/* Estrategia Mobile-first */
+    body {
+      background-image : url(../static/imagenes/fondo.jpg);
+      font-family: "Consolas","Open Sans", "Arial", "Helvetica", sans-serif;
+      margin:0;
+      color: #0fff26;
+    }
+    h1 {
+      margin-top:0px;
+      margin-bottom:0px;
+      letter-spacing: -2px;
+      margin-left: 30px;
+      padding-left: 50px;
+      background: transparent url(../static/imagenes/logoVerde.png) no-repeat left center;
+      font-size: 40px;   
+    }
+    ul{
+      margin-top:0px;
+      margin-left:70px;
+    }
+    a{
+      color:#0fff26;
+    }
+    h2 {
+      text-align:center;
+      text-shadow: rgb(19, 17, 17) 3px 3px;
+      margin-bottom: 8px;
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left:10px;
+      margin-right:10px;
+      padding:4px;
+      background-color: #0fff26;
+      width: 15%;
+    }
+    form {
+      background-color: white;
+      margin:10px;
+      padding:20px;
+      border: solid 4px black;
+      color:black;
+    }
+    legend {
+      font-size: 2em;
+      text-shadow: #00000023 3px 3px;
+      }
+    #enviar {
+      font-size: 20px;
+      width: 140px;
+      height: 50px;
+      color: white;
+      background-color: green;
+      border-radius: 11px;
+    }
+    footer {
+      padding:30px;
+      margin-top:50px;
+      background-color: #0fff26;
+      border-top: solid 4px black;
+      color:black;
+    }
+    .inicio {
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      /* Hay que definir la propiedad color en la clase .inicio porque aunque también
+      herede el color del contenedor footer, de quien realmente hereda que macahaca
+      el anterior, es de contenedor a */
+      color:black;
+    }
+
+/* Punto de ruptura para tabletas */
+@media (min-width: 768px) {
+body {
+    color: #ffff13;
+}
+h1 {
+      padding-left: 60px;
+      background: transparent url(../static/imagenes/logoAmarillo.png) no-repeat left center;
+      font-size: 50px;   
+}
+h2 {
+      font-size: 45px;
+      letter-spacing: 8px;
+}
+a{
+      color:#ffff13;
+}
+img {
+      padding:8px;
+      background-color: #ffff13;
+      width: 16%;
+    }
+footer {
+      background-color: #ffff13;
+}
+}
+
+/* Punto de ruptura para escritorio */
+@media (min-width: 992px) {
+body {
+    color: white;
+}
+h1 {
+      padding-left: 70px;
+      background: transparent url(../static/imagenes/logoBlanco.png) no-repeat left center;
+      font-size: 60px;   
+}
+h2 {
+      font-size: 50px;
+      letter-spacing: 16px;
+}
+a{
+      color:white;
+}
+img {
+      padding:10px;
+      background-color: white;
+      width: 19%;
+    }
+footer {
+      background-color: white;
+}
+}
